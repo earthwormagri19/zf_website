@@ -81,7 +81,7 @@ body a:hover{
    /*-- background:rgba(7, 28, 51, 0.68);--*/
 }
 .header nav.navbar.navbar-default {
-    background: transparent;
+    background: white;
     margin: 0;
 	z-index: 9999;
 	border: none;
@@ -3447,7 +3447,7 @@ h2.theme-text {
   width: 100%;
   overflow: hidden;
   height: 4rem;
-  background-color : #fcf8e3; 
+  background-color : #ffae00; 
   padding-left: 100%;
   box-sizing: content-box;
 }
@@ -3476,6 +3476,10 @@ h2.theme-text {
     padding: 0 2rem !important;
     font-size: 2rem !important;
     color: #185e2e !important;   
+}
+
+.slider-padding {
+    padding-top: 94px
 }
 
 
