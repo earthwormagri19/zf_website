@@ -3483,7 +3483,8 @@ h2.theme-text {
 }
 
 .whatsapp {
-    position: fixed;
+    right: 13px !important;
+    left: 0;
 }
 body { padding-bottom: 5rem; }
 h1,h2,p {padding: 0 5%;}
