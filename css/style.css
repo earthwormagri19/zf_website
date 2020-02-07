@@ -121,7 +121,7 @@ body a:hover{
 	margin:0 1.5em;
 }
 .header .nav.navbar-nav.navbar-left li a {
-    color: #fff !important;
+    color: #ffae00 !important;
     font-size: 1.2em;
     padding: 0;
     position: relative; 
@@ -131,7 +131,7 @@ body a:hover{
     -ms-transition: 0.5s all;
     transition: 0.5s all;
     text-decoration: none;
-	font-weight: 300;
+	font-weight: 400;
 }
 .header .nav.navbar-nav.navbar-left li  a:hover,.nav.navbar-nav.navbar-left li.open  a.dropdown-toggle,.nav.navbar-nav.navbar-left li  a.active {
     color: #ffae00 !important;
@@ -208,7 +208,7 @@ body a:hover{
 }
 .social-icon a {
     font-size: 1.3em;
-    color: #fff;
+    color : #ffae00;
     margin: 0 .7em;
     display: inline-block;
     text-align: center;
@@ -1467,10 +1467,10 @@ h2.typoh2{
 	-moz-transition:0.5s all;
 }
 .icon-box:hover i.fa {
-	color:#fff !important;
+	color:#ffae00 !important;
 }
 .icon-box:hover a.agile-icon {
-	color:#fff !important;
+	color:#ffae00 !important;
 }
 .codes .bs-glyphicons li {
     float: left;
@@ -3486,6 +3486,7 @@ h2.theme-text {
     right: 0;
     left: 30px !important;
     bottom: 30px !important;
+    position: fixed;   
 }
 body { padding-bottom: 5rem; }
 h1,h2,p {padding: 0 5%;}
