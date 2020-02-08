@@ -440,6 +440,9 @@
 			*/
 			
 			$().UItoTop({ easingType: 'easeOutQuart' });
+			$.get('http://localhost:4200/api/users',{},function(data,status,xhr){
+				print('users'+data);
+			},"json");
 			
 		});
 	</script>

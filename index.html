@@ -440,6 +440,9 @@
 			*/
 			
 			$().UItoTop({ easingType: 'easeOutQuart' });
+			$.get('https://eaops1.herokuapp.com/api/users',{},function(data,status,xhr){
+				print('users'+data);
+			},"json");
 			
 		});
 	</script>
