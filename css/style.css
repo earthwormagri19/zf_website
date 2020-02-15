@@ -65,7 +65,7 @@ body a:hover{
 	position:relative;
 } 
 .banner-1{ 
-	background:url(../images/1.jpg)no-repeat;
+    background-color: white;
 	-webkit-background-size:cover; 
 	-moz-background-size:cover; 
 	-o-background-size:cover;
