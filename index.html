@@ -32,7 +32,7 @@
 			<nav class="navbar navbar-default navbar-fixed-top">
 				<div class="ticker-wrap">
 					<div class="ticker">
-						<div id ="priceticker" class="ticker__item">nnnnnnnnnnn</div>
+						<div id ="priceticker" class="ticker__item"></div>
 					</div>
 				</div> 
 				<div class="container">
@@ -188,7 +188,7 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$().UItoTop({ easingType: 'easeOutQuart' });		
-			axios.get('http://localhost:4200/api/items', {}).then(function(data){
+			axios.get('https://zfratesapi.herokuapp.com/rates/items', {}).then(function(data){
 				var items = data && data.data;
 				var itemsString = '';
 				items.forEach(element => {
