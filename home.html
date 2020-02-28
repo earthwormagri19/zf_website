@@ -27,7 +27,7 @@
 </head>
 <body>
 <!-- banner -->
-	<div class="banner"> 
+	<div id = "bn" class="banner"> 
 		<div class="header agileinfo-header"><!-- header -->
 			<nav class="navbar navbar-default navbar-fixed-top">
 				<div class="ticker-wrap">
@@ -107,7 +107,7 @@
 				<div class="col-md-4 col-sm-4 footer-wthree-grid">
 					<h3>Contact Info</h3>
 					<ul>
-						<li>Earthworm Agri Solutions Pvt Ltd</li> 
+						<li>Earthworm Pvt Ltd</li> 
 						<li>H.No 1-11/32 Fortune Villas, Beside BLN Garden</li> 
 						<li>Nizamabad, Telangana</li>
 						<li>Phone: 6303221332</li>
@@ -117,12 +117,13 @@
 				<div class="clearfix"> </div>		
 			</div>
 			<div class="copy-right"> 
-				<p>© 2017 Earthworm Agri Solutions Pvt Ltd. All rights reserved.</a></p>
+				<p>© 2017 Earthworm Pvt Ltd. All rights reserved.</a></p>
 			</div>
-			<div>
-				<a href="https://api.whatsapp.com/send?phone=+916303221332">
-				<img alt="whatsapp" src="https://www.aozata.com/wp-content/uploads/2019/01/iconfinder_whatsapp_287520.png"  class="navbar-fixed-bottom whatsapp" width="50" height="50"></a>
-			</div>
+		</div>
+		<div  class="navbar-fixed-bottom">	
+			<!-- <a href="https://api.whatsapp.com/send?phone=+916303221332"></a> -->
+			<img alt="whatsapp" src="images/zf_phone_number.png" class="ph_responsive" width="1450" height="70"></a>
+			<!-- <img alt="whatsapp" src="https://www.aozata.com/wp-content/uploads/2019/01/iconfinder_whatsapp_287520.png"  class="navbar-fixed-bottom whatsapp" width="50" height="50"></a> -->
 		</div>
 	</div> 
 	<!-- //footer end here -->  
@@ -141,33 +142,33 @@
 	<!-- End-slider-script --> 
 <!-- Flexslider-js for-testimonials -->
 <script type="text/javascript">
-							$(window).load(function() {
-								$("#flexiselDemo1").flexisel({
-									visibleItems:1,
-									animationSpeed: 1000,
-									autoPlay: true,
-									autoPlaySpeed: 3000,    		
-									pauseOnHover: true,
-									enableResponsiveBreakpoints: true,
-									responsiveBreakpoints: { 
-										portrait: { 
-											changePoint:480,
-											visibleItems: 1
-										}, 
-										landscape: { 
-											changePoint:640,
-											visibleItems:1
-										},
-										tablet: { 
-											changePoint:768,
-											visibleItems: 1
-										}
-									}
-								});
-								
-							});
-					</script>
-					<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		$(window).load(function() {
+			$("#flexiselDemo1").flexisel({
+				visibleItems:1,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,    		
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: { 
+					portrait: { 
+						changePoint:480,
+						visibleItems: 1
+					}, 
+					landscape: { 
+						changePoint:640,
+						visibleItems:1
+					},
+					tablet: { 
+						changePoint:768,
+						visibleItems: 1
+					}
+				}
+			});
+			
+		});
+</script>
+<script type="text/javascript" src="js/jquery.flexisel.js"></script>
 <!-- //Flexslider-js for-testimonials -->
 
 
@@ -192,13 +193,28 @@
 				var items = data && data.data;
 				var itemsString = '';
 				items.forEach(element => {
-					itemsString = itemsString.concat(element.name +': ₹' + element.zfRate+ '/'+ element.unit+ ' | ');
+					if(element.available === 'Available') {
+						itemsString =   itemsString.concat(element.name +': ₹' + element.zfRate+ '/'+ element.unit+ ' |   ');
+					}
 				});	
 				$("#priceticker").text(itemsString)			
 			}).catch(function(error){
 
 			})
 		});
+
+		var images=new Array('images/1_.jpg','images/1.jpg','images/ab1.jpg');
+		var nextimage=0;
+		doSlideshow();
+
+		function doSlideshow(){
+			if(nextimage>=images.length){nextimage=0;}
+			$('.bn')
+			.css('background-image','url("'+images[nextimage++]+'")')
+			.fadeIn(500,function(){
+				setTimeout(doSlideshow,1000);
+			});
+		}
 
 	</script>
 	<!-- //smooth-scrolling-of-move-up -->   
