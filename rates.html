@@ -176,8 +176,8 @@
 				items.forEach(element => {
 					if(element.available === 'Available') {
 						itemsString = itemsString.concat(element.name +': ₹' + element.zfRate+ '/'+ element.unit+ ' | ');
+						$("table tbody").append('<tr><td>'+element.name +'</td><td>' + '₹'+element.zfRate+ '/'+ element.unit + '</td></tr>');
 					}
-					$("table tbody").append('<tr><td>'+element.name +'</td><td>' + '₹'+element.zfRate+ '/'+ element.unit + '</td></tr>');
 				});	
 				$("#priceticker").text(itemsString)			
 			}).catch(function(error){
