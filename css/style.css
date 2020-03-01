@@ -3467,8 +3467,8 @@ h2.theme-text {
             animation-timing-function: linear;
    -webkit-animation-name: ticker;
            animation-name: ticker;
-    -webkit-animation-duration: 30s;
-    animation-duration: 30s;
+    -webkit-animation-duration: 60s;
+    animation-duration: 60s;
 }
 
 .ticker .item__item {
