@@ -30,11 +30,11 @@
 	<div id = "bn" class="banner"> 
 		<div class="header agileinfo-header"><!-- header -->
 			<nav class="navbar navbar-default navbar-fixed-top">
-				<div class="ticker-wrap">
+				<!-- <div class="ticker-wrap">
 					<div class="ticker">
 						<div id ="priceticker" class="ticker__item"></div>
 					</div>
-				</div> 
+				</div>  -->
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="navbar-header">
@@ -45,13 +45,16 @@
 							<span class="icon-bar"></span>
 						</button>
 						<h1><a href="index.html"><i  aria-hidden="true"></i><img src="images/zf.png" alt=" " height="300" width="300" class="img-responsive" /></a></h1>
+						<a class="btn orderBtn" href="https://forms.gle/ftDzae6zRjxze3yG9" role="button" target="_blank">Order Now</a>
 					</div> 
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav navbar-left"> 
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						</button>
+						<!-- <ul class="nav navbar-nav navbar-left"> 
 							<li><a href="index.html" class="w3ls-hover active">Home</a></li>
 							<li><a href="rates.html" class="btn w3ls-hover">Our Rates</a></li>
-						</ul>	   
+						</ul>	    -->
 						<div class="social-icon">
 							<a href="https://www.facebook.com/zoomfresh.in/" class="social-button facebook"  target="_blank"><i class="fa fa-facebook"></i></a> 
 							<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a> 
@@ -189,18 +192,18 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$().UItoTop({ easingType: 'easeOutQuart' });		
-			axios.get('https://zfratesapi.herokuapp.com/rates/items', {}).then(function(data){
-				var items = data && data.data;
-				var itemsString = '';
-				items.forEach(element => {
-					if(element.available === 'Available') {
-						itemsString =   itemsString.concat(element.name +': ₹' + element.zfRate+ '/'+ element.unit+ ' |   ');
-					}
-				});	
-				$("#priceticker").text(itemsString)			
-			}).catch(function(error){
+			// axios.get('https://zfratesapi.herokuapp.com/rates/items', {}).then(function(data){
+			// 	var items = data && data.data;
+			// 	var itemsString = '';
+			// 	items.forEach(element => {
+			// 		if(element.available === 'Available') {
+			// 			itemsString =   itemsString.concat(element.name +': ₹' + element.zfRate+ '/'+ element.unit+ ' |   ');
+			// 		}
+			// 	});	
+			// 	$("#priceticker").text(itemsString)			
+			// }).catch(function(error){
 
-			})
+			// })
 		});
 
 		var images=new Array('images/1_.jpg','images/1.jpg','images/ab1.jpg');

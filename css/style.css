@@ -3530,4 +3530,12 @@ h1,h2,p {padding: 0 5%;}
     height: 75px;
     max-width: 100%;
   }
+.orderBtn {
+    color: #fff;
+    background-color: #e41212;
+    border-color: #eea236;
+    margin-left: 92px;
+    margin-bottom: 12px;
+}
+ 
 /*-- //responsive-design --*/
