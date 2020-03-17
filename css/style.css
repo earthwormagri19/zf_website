@@ -290,7 +290,7 @@ body a:hover{
 }
 /*-- Testimonials --*/
 .testimonials {
-    background: url(../images/s5.jpg)no-repeat center;
+    background: url(../images/1_.jpg)no-repeat center;
     background-attachment: fixed;
     background-size: cover;
     -webkit-background-size: cover;
@@ -308,7 +308,7 @@ body a:hover{
     width: 11%;
 }
 .wthree_testimonials_grid {
-        position: relative;
+    position: relative;
     margin: 2em auto 0;
     background: rgba(253, 253, 253, 0.21);
     padding: 3em 5em 2em;
