@@ -50,8 +50,8 @@
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav navbar-left"> 
 							<li><a href="index.html" class="btn w3ls-hover">Home</a></li>
-							<li><a href="rates.html" class="w3ls-hover active">Our Rates</a></li>
-							<li><a href="deliverytimes.html" class="btn w3ls-hover">Delivery Times</a></li>
+                            <li><a href="rates.html" class="btn w3ls-hover">Our Rates</a></li>
+                            <li><a href="deliverytimes.html" class="w3ls-hover active">Delivery Times</a></li>
 						</ul>	   
 						<div class="social-icon">
 							<a href="https://www.facebook.com/zoomfresh.in/" class="social-button facebook"  target="_blank"><i class="fa fa-facebook"></i></a> 
@@ -66,11 +66,27 @@
             <table class ="customers" id="customers">
 				<thead>
 					<tr>
-						<th>Item</th>
-						<th>Rate</th>
+						<th>Order day</th>
+						<th>Delivery day</th>
 					</tr>
 				</thead>
 				<tbody>
+                    <tr>
+                        <td>
+                            Wednesday
+                        </td>
+                        <td>
+                            Thursday 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Saturday
+                        </td>
+                        <td>
+                            Sunday
+                        </td>
+                    </tr>
 				</tbody>
 			  </table>  
         </div>
@@ -166,7 +182,7 @@
 		</script>
 	<!-- //end-smooth-scrolling   -->	
 	<!-- smooth-scrolling-of-move-up -->
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		$(document).ready(function() {
 			$().UItoTop({ easingType: 'easeOutQuart' });		
 			axios.get('https://zfratesapi.herokuapp.com/rates/items', {}).then(function(data){
@@ -184,7 +200,7 @@
 			})
 		});
 
-	</script>
+	</script> -->
 	<!-- //smooth-scrolling-of-move-up -->   
 	<!-- Bootstrap core JavaScript
     ================================================== -->
